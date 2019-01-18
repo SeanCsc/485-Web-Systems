@@ -10,8 +10,8 @@ Google
 
 ---
 
-[x] Linux
+- [x] Linux
 
-[x] Shell
+- [x] Shell
 
-[x] HTML/CSS
+- [x] HTML/CSS
