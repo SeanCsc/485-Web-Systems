@@ -14,6 +14,23 @@ Google
 
 - [x] Shell
 
-- [] HTML/CSS
+- [ ] HTML/CSS
+
+- [ ] Python
+
+-- Flask Web Framework
+
+-- Thread, process, socket libraries
+
+- [x] SQL
+
+- [ ] Javascript
+
+-- Modern ES6 syntax
+
+-- React/JS framework
+
+- [ ] Hadoop
+
 
 
