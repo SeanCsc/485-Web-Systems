@@ -1,0 +1,44 @@
+## History, Markup Languages and the Request Response Cycle
+
+to do : Project1 and environment setting
+
+---
+
+Markup language(HTML/CSS)
+
+use html for content (data) and presentation (words/tables)
+
+use css for layout (visual)
+
+
+---
+The Request Response cycle
+
+- URL encoding
+
+- HTTP
+
+---
+
+hypertext: text with embedded links (tag: a)
+
+escape string
+
+DOM is a data structure built from HTML (like a tree) 根据tag进行层级划分
+
+html - commet : !--
+
+---
+
+cycle:
+
+wget - download the webpage
+
+curl - dump web page to terminal 爬下来网站
+
+---
+
+HTTP request methods: server action
+
+GET/HEAD/POST
+
