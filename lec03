@@ -1,0 +1,31 @@
+## Sessions
+
+---
+
+static content
+
+server side: HTTP servers are *fileservers*
+
+client side: browsers are HTML renderers
+
+---
+
+dynamic:
+
+runs a function - mix the code and content
+
+---
+
+JavaScript
+
+tag: script
+
+read or write to DOM
+
+---
+
+url routing
+
+dynamic pages are created by executing a function at the time of a request
+
+
