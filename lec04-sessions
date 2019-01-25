@@ -1,0 +1,51 @@
+state: eg logged in 
+
+HTTP is stateless. 
+
+session: a single interaction between the site and user.
+eg: facebook login/amazon cart
+
+因为HTTP是stateless，所以当进行一些添加购物车的操作的时候，HTTP并不知道是谁干的，那么如何解决这个问题
+
+于是就引出了类似session protocal的东西, 在应用层实现，用session变量来存储状态，后面请求可以调用前面请求的数据。
+
+------
+
+框架（flask,django等）就为利用session提供了很好的空间。接下来要解决的几个问题：
+1.什么时候使用一个session
+2.如何储存session数据
+3.什么时候关闭一个session
+4.如何将session可以关联到用户上
+5.如何把http请求关联到session上
+
+1.取决于场景，比如gmail需要这个session显示正确用户的邮件，比如amazon在浏览页面的时候需要知道是谁在将货物添加到自己的购物车
+
+2.取决于server。只存少量的数据（id等）来识别session，然后可以利用这些数据去数据库查找
+
+3. logout/timeout - 
+
+4. client向server发出页面请求，server返回需要login，client再发出login请求，登陆成功返回页面
+ 
+5. 将简单的http层操作变成三维的有用户信息的操作，如何实现？Cookies
+
+------
+cookies:small files on client machine
+存着http requests之间的状态；包含键值对信息
+所以每次在添加到购物车的时候，都会去修改数据库，然后设置cookies，下一个操作就会带着这个cookie了
+
+cookies are the only way that know who you are
+
+cookie包括name,value,domain,path,expiration,secure
+
+只会被同一个domain和path来复写，通过session id来进行数据库查找
+------
+两侧都能操作cookie，但是各自有自己的权限。
+session cookies在关掉服务器的时候就没了，permanent cookies有明确的过期时间
+
+third-party cookies
+有不同的domain
+
+
+
+
+
